@@ -1,24 +1,7 @@
 # Issues
 
-**TODO: Add description**
+Chapter 13 project from [Programming Elixir](https://pragprog.com/book/elixir13/programming-elixir-1-3) by [Dave Thomas](https://twitter.com/pragdave).
 
-## Installation
+Command line Elixir application to fetch issues from a github project and present recent issues in a table format. This is a work in progress.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add `issues` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:issues, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `issues` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:issues]]
-    end
-    ```
-
+See [smeade/programming-elixir-book-notes](https://github.com/smeade/programming-elixir-book-notes) for notes from the book and this chapter.
