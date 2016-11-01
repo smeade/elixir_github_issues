@@ -2,13 +2,15 @@ defmodule Issues.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :issues,
-     escript: escript_config,
+    [app:     :issues,
      version: "0.1.0",
-     elixir: "~> 1.3",
+     name:    "Issues",
+     elixir:  "~> 1.3",
+     escript: escript_config,
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     source_url: "https://github.com/smeade/elixir_github_issues",
+     deps:    deps()]
   end
 
   # Configuration for the OTP application
@@ -29,8 +31,10 @@ defmodule Issues.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      httpoison: "~> 0.9",
-      poison:    "~> 2.2"
+      {:httpoison,  "~> 0.9"},
+      {:poison,     "~> 2.2"},
+      {:ex_doc,     "~> 0.12"},
+      {:earmark,    "~> 1.0", override: true}
     ]
   end
 
